@@ -1,0 +1,33 @@
+# Large data
+data/raw_videos/*
+data/test_frames/*
+runs/*
+logs/*
+reports/*
+
+# Keep folder structure
+!data/raw_videos/.gitkeep
+!data/test_frames/.gitkeep
+!runs/.gitkeep
+!logs/.gitkeep
+!reports/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# macOS
+.DS_Store
+
+# Calibration output
+*.npy
+*.npz
+*.pkl
+*.mat
+*.yml
+*.yaml
+*.mp4
+*.avi
+*.ccv

@@ -1,0 +1,30 @@
+project_name: pipeline1_lensboy_detection_calibcam_calibration
+
+paths:
+  project_root: /Users/nilamaitrachaity/Desktop/lenseboy_calibcam
+  dataset_dir: data/dark_frames-no_common_pose_frame
+  videos_dir: data/dark_frames-no_common_pose_frame
+  board_file: data/dark_frames-no_common_pose_frame/bboboard-v2.npy
+  output_dir: runs/pipeline1
+
+videos:
+  camera_files:
+    - 20260530_cam1_3.ccv.mp4
+    - 20260530_cam2_3.ccv.mp4
+    - 20260530_cam3_3.ccv.mp4
+    - 20260530_cam4_3.ccv.mp4
+    - 20260530_cam5_3.ccv.mp4
+    - 20260530_cam6_3.ccv.mp4
+    - 20260530_cam7_2.ccv.mp4
+
+detection:
+  method: lensboy_charuco
+  frame_step: 10
+  min_corners_per_frame: 8
+  save_debug_images: true
+
+calibcam:
+  models:
+    - pinhole
+  run_single_camera: true
+  run_multi_camera: true

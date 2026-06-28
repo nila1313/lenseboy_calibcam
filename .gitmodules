@@ -1,0 +1,9 @@
+[submodule "external/calibcamlib"]
+	path = external/calibcamlib
+	url = https://github.com/bbo-lab/calibcamlib
+[submodule "external/lensboy"]
+	path = external/lensboy
+	url = https://github.com/Robertleoj/lensboy
+[submodule "external/calibcam"]
+	url = https://github.com/bbo-lab/calibcam
+	path = external/calibcam
