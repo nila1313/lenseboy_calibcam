@@ -5,7 +5,6 @@ cd ~/Desktop/lenseboy_calibcam
 
 OUT_DIR="runs/pipeline1/15_calibcam_all7_ccv_direct"
 LOG_DIR="${OUT_DIR}/logs"
-
 mkdir -p "$LOG_DIR"
 
 VIDEOS=(
